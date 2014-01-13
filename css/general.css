@@ -1,0 +1,42 @@
+html{
+	font-family: helvetica, sans-serif;
+	font-size: 14pt;
+}
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: #ff7e5b;
+}
+
+.header-copy{
+
+}
+
+.btn{
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+	border-radius: 20%;
+}
+
+.summary{
+	text-align: center;
+
+}
+
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+
+}
+
+.flex-img{
+	width: 100%;
+}
