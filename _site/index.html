@@ -5,6 +5,7 @@
   <title>App Promotional Site</title>
   <link href="css/general.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
 </head>
@@ -27,10 +28,27 @@
 					<p><b>1.</b> Choose your beverage or meal to pair with.</p>
 					<p><b>2.</b> Narrow your search by including tasting notes or ingredients.</p>
 					<p><b>3.</b> Find the perfect recipe or drink to match your request.</p>
-					<img src="img/download-button.png" class="btn" alt="buy now">
+					<a href="https://itunes.apple.com/ca/genre/ios/id36?mt=8">
+						<input type="image" id="download" src="img/download-button.png" class="btn" alt="visit-the-app-store"></a>
+					</a>
 				</div>
 			</div>
 	</header>
+		<div class="carousel">
+		<div class="items">
+			<img data-state="current" src="img/argyle-0.png" alt="">
+			<img src="img/argyle-1.png" alt="">
+			<img src="img/argyle-2.png" alt="">
+			<img src="img/argyle-3.png" alt="">
+			<img src="img/argyle-4.png" alt="">
+		</div>
+		<div class="carousel-buttons">
+			<button class="next"><</button>
+			<button class="previous">></button>
+		</div>
+	</div>
 
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
