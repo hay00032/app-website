@@ -6,6 +6,8 @@
   <link href="css/general.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/video.css" rel="stylesheet">
+  <link href="css/dialog-polyfill.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
 </head>
@@ -20,7 +22,11 @@
 				<img src="img/title.png" class="unit-s-hidden unit-m-1-2 unit-l-1-2 title" alt="title">
 			</div>
 			<div class="unit unit-spacer-sides">
-				<img src="http://placehold.it/200x150" class="unit-s-1 unit-m-1-2 unit-l-1-2 flex-img video" alt="video">
+				<img src="img/video-screen.png" href="#" class="btn-open unit-s-1 unit-m-1-2 unit-l-1-2 flex-img video" alt="video"></a>
+				<dialog>
+					<div class="video"></div>
+					<button class="btn-close">x</button>
+				</dialog>
 			</div>
 			<div class="unit unit-spacer-sides">
 				<div class="summary unit-s-1 unit-m-1-2 unit-l-1-2">
@@ -36,19 +42,17 @@
 	</header>
 		<div class="carousel">
 		<div class="items">
-			<img data-state="current" src="img/argyle-0.png" alt="">
-			<img src="img/argyle-1.png" alt="">
-			<img src="img/argyle-2.png" alt="">
-			<img src="img/argyle-3.png" alt="">
-			<img src="img/argyle-4.png" alt="">
+			<img src="img/page-0.png" alt="">
+			<img src="img/page-1.png" alt="">
+			<img src="img/page-2.png" alt="">
+			<img src="img/page-3.png" alt="">
+			<img src="img/page-4.png" alt="">
 		</div>
-		<div class="carousel-buttons">
-			<button class="next"><</button>
-			<button class="previous">></button>
-		</div>
-	</div>
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/dialog-polyfill.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/video.js"></script>
+
 </body>
 </html>
