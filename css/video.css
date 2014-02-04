@@ -1,8 +1,11 @@
 dialog{
-	border-radius: 6px;
+	border-radius: 1px;
 	border: 1px solid #333;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-	padding: 1em;
+	padding: 0;
+	width: 80%;
+	background-color: #000;
+	top: -280px;
 }
 
 dialog::backdrop {
@@ -15,6 +18,21 @@ dialog::backdrop {
 
 .video{
 	cursor: pointer;
+	position: relative;
+}
+
+.video-js{
+	padding-top: 56.25%;
+}
+
+.video-js iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+
 }
 
 .btn-close{
