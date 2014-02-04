@@ -1,0 +1,143 @@
+
+.orbit-section{
+	background-color: #9f221b;
+}
+
+.planet-wrapper{
+	position: relative;
+}
+
+.planet{
+	width: 100px;
+}
+
+.rocket{
+	left: 50%;
+	margin-left: -20px;
+	position: absolute;
+	top: -40px;
+	width: 40px;
+	/*Don't forget the rest of the vendor prefixes*/
+	/*-webkit-transform: rotate(60deg);*/
+	-webkit-transform-origin: 50% 90px;
+	/*-moz-transform: rotate(45deg);*/
+	-moz-transform-origin:(50% 90px);
+	-webkit-animation: rocket-rotate 6s linear infinite;
+	/*
+	-webkit-animation-name: rocket-rotate;
+	-webkit-duration: 6s;
+	-webkit-timing-function: linear;
+	-webkit-iteration-count: infinite;
+
+	*/
+}
+
+/*Write 5x for every browser compatibility*/
+@-webkit-keyframes rocket-rotate{
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+/*--------------------------------------------------------------*/
+
+.sun{
+	width: 300px;
+}
+
+/*--------------------------------------------------------------*/
+
+.js-logo-animate{
+	-webkit-animation: logo-fade 1s linear 1 forwards;
+	/*
+	How to apply styles before and after animating,
+	'forwards' - retain the last computed animation values
+	animation-fill-mode:forwards;
+	*/
+}
+
+@-webkit-keyframes logo-fade{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.js-phone-animate{
+	-webkit-animation: phone-fade 1s linear 1 forwards;
+	/*
+	How to apply styles before and after animating,
+	'forwards' - retain the last computed animation values
+	animation-fill-mode:forwards;
+	*/
+}
+
+@-webkit-keyframes phone-fade{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*--------------------------------------------------------------*/
+
+.ships-section{
+	background-color: #f6a500;
+}
+
+.ships{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.ships li{
+	display: inline-block;
+	margin: 0 2rem;
+}
+
+.ships img{
+	width: 140px;
+	opacity: 0;
+	-webkit-transform: translateY(140px);
+}
+
+.js-ships-animate{
+	-webkit-animation: ship-fly 1s ease-out 1 forwards;
+}
+
+@-webkit-keyframes ship-fly{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(140px);
+	}
+	40%{
+		opacity: 1;
+		-webkit-transform: translateY(140px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+.js-ship-delay-1{
+	-webkit-animation-delay: 100ms;
+}
+
+.js-ship-delay-2{
+	-webkit-animation-delay: 200ms;
+}
+
+.js-ship-delay-3{
+	-webkit-animation-delay: 250ms;
+}
+

@@ -41,6 +41,7 @@ a hover{
 	padding-top: 2em;
 	padding-bottom: 2em;
 	width: 180px;
+	opacity: 0;
 
 }
 
@@ -90,6 +91,7 @@ p{
 
 .phone{
 	float: left;
+	opacity: 0;
 }
 }
 
@@ -128,6 +130,7 @@ p{
 .phone{
 	float: left;
 	max-width: 45%;
+	opacity: 0;
 }
 
 }
