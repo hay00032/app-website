@@ -35,12 +35,15 @@ a hover{
 }
 
 .logo{
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ (0);
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
 	width: 180px;
+
 	opacity: 0;
 
 }

@@ -1,0 +1,24 @@
+#tweets {
+    width: 300px;
+    font-family: georgia;
+    font-size: 15px;
+    color: #333333;
+    padding: 10px;
+}
+#tweets .tweet {
+    margin: 0 auto 15px auto;
+    padding: 0 0 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+#tweets .tweet a {
+    text-decoration: none;
+    color: #13c9d0;
+}
+#tweets .tweet a:hover {
+    text-decoration: underline;
+}
+#tweets .tweet .time {
+    font-size: 10px;
+    font-style: italic;
+    color: #666666;
+}

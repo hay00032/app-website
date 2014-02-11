@@ -1,7 +1,7 @@
 var $win = $(window);
-var $sun = $('.sun');
-var $dipper = $('.dipper');
-var $ships = $('.ships img');
+var $logo = $('.logo');
+var $phone = $('.phone');
+
 
 $win.on('scroll', function (){
 	//console.log($win.scrollTop());
